@@ -9,12 +9,13 @@ package habitat;
  *
  * @author iUser
  */
-public abstract class Velocity {
+public abstract class Velocity implements IBehaviour {
 
     
-    abstract public String Beep();
+    //abstract public String Beep();
     
     //double P; //вероятность появления на дороге
     
-    
+    int x;
+    int y;
 }
