@@ -5,7 +5,7 @@
  */
 package habitat;
 
-import java.awt.Image;
+import java.awt.image.BufferedImage;
 
 /**
  *
@@ -21,5 +21,24 @@ public class Moto extends Velocity implements IBehaviour {
        return "Im a Moto"; 
     }
     
-    public Image pic;
+    @Override
+    public boolean setPic(BufferedImage pic) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(pic != null){
+            this.pic = pic;
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    
+    private BufferedImage pic;
+
+    @Override
+    public BufferedImage getPic() {
+        return this.pic;
+    }
+
+    
 }
