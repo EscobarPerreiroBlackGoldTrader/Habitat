@@ -35,6 +35,10 @@ public class Car extends Velocity implements IBehaviour {
         }
     }
     
+    public String specCarF1(){
+        return "Im special func in Car";
+    }
+    
     /**
      * хранит ссылку на картинку 
      */
@@ -42,7 +46,6 @@ public class Car extends Velocity implements IBehaviour {
 
     @Override
     public BufferedImage getPic() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         return this.pic;
     }
 
