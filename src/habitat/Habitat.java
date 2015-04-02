@@ -333,7 +333,9 @@ public class Habitat extends Applet {
         //frame.getContentPane().add(rightPan).doLayout();
         frame.setLayout(new GridLayout(1, 2));
         frame.getContentPane().add(app);
-        frame.add(rightPan);
+        
+        //frame.add(rightPan); раскоментировать если нужен GUI
+        
         ////frame.getContentPane().add(buttonStop);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
